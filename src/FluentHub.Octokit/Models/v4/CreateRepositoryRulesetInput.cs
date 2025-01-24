@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class CreateRepositoryRulesetInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The global relay id of the source in which a new ruleset should be created in.
 		/// </summary>
@@ -42,10 +47,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// A list of actors that are allowed to bypass rules in this ruleset.
 		/// </summary>
 		public List<RepositoryRulesetBypassActorInput> BypassActors { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }

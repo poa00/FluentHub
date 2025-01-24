@@ -1,14 +1,17 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
 {
 
 	/// <summary>
-	/// Represents an owner of a project (beta).
+	/// Represents an owner of a project.
 	/// </summary>
 	public interface IProjectV2Owner
 	{
+		/// <summary>
+		/// The Node ID of the ProjectV2Owner object
+		/// </summary>
 		ID Id { get; set; }
 
 		/// <summary>

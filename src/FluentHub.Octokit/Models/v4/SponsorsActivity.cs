@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -18,7 +18,15 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		public SponsorshipPrivacy? CurrentPrivacyLevel { get; set; }
 
+		/// <summary>
+		/// The Node ID of the SponsorsActivity object
+		/// </summary>
 		public ID Id { get; set; }
+
+		/// <summary>
+		/// The platform that was used to pay for the sponsorship.
+		/// </summary>
+		public SponsorshipPaymentSource? PaymentSource { get; set; }
 
 		/// <summary>
 		/// The tier that the sponsorship used to use, for tier change events.

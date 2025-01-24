@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -17,6 +17,11 @@ namespace FluentHub.Octokit.Models.v4
 		/// The level of access this source has granted to the user.
 		/// </summary>
 		public DefaultRepositoryPermissionField Permission { get; set; }
+
+		/// <summary>
+		/// The name of the role this source has granted to the user.
+		/// </summary>
+		public string RoleName { get; set; }
 
 		/// <summary>
 		/// The source of this permission.

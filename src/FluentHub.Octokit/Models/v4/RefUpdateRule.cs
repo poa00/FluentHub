@@ -1,10 +1,10 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
 {
 	/// <summary>
-	/// A ref update rules for a viewer.
+	/// Branch protection rules that are enforced on the viewer.
 	/// </summary>
 	public class RefUpdateRule
 	{

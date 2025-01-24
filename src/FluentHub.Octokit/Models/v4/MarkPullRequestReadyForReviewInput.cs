@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -9,13 +9,13 @@ namespace FluentHub.Octokit.Models.v4
 	public class MarkPullRequestReadyForReviewInput
 	{
 		/// <summary>
-		/// ID of the pull request to be marked as ready for review.
-		/// </summary>
-		public ID PullRequestId { get; set; }
-
-		/// <summary>
 		/// A unique identifier for the client performing the mutation.
 		/// </summary>
 		public string ClientMutationId { get; set; }
+
+		/// <summary>
+		/// ID of the pull request to be marked as ready for review.
+		/// </summary>
+		public ID PullRequestId { get; set; }
 	}
 }

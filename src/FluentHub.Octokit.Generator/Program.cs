@@ -1,4 +1,4 @@
-﻿// Copyright (c) FluentHub
+﻿// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 using Octokit.GraphQL;
@@ -23,7 +23,7 @@ namespace FluentHub.Octokit.ModelGenerator
 				StringBuilder message = new(1024);
 
 				message.AppendLine();
-				message.AppendLine("Copyright (c) 2023 0x5BFA");
+				message.AppendLine("Copyright (c) 2022-2024 0x5BFA");
 				message.AppendLine("Licensed under the MIT License. See the LICENSE.");
 				message.AppendLine();
 				message.AppendLine("FluentHub Octokit Model Generator");

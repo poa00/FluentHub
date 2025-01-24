@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -12,6 +12,16 @@ namespace FluentHub.Octokit.Models.v4
 		/// The text of the announcement
 		/// </summary>
 		public string Announcement { get; set; }
+
+		/// <summary>
+		/// The date the announcement was created
+		/// </summary>
+		public DateTimeOffset? AnnouncementCreatedAt { get; set; }
+
+		/// <summary>
+		/// Humanized string of "The date the announcement was created"
+		/// <summary>
+		public string AnnouncementCreatedAtHumanized { get; set; }
 
 		/// <summary>
 		/// The expiration date of the announcement, if any
@@ -33,6 +43,11 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		/// <param name="size">The size of the resulting square image.</param>
 		public string AvatarUrl { get; set; }
+
+		/// <summary>
+		/// The enterprise's billing email.
+		/// </summary>
+		public string BillingEmail { get; set; }
 
 		/// <summary>
 		/// Enterprise billing information visible to enterprise billing managers.
@@ -64,6 +79,9 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		public string DescriptionHTML { get; set; }
 
+		/// <summary>
+		/// The Node ID of the Enterprise object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>

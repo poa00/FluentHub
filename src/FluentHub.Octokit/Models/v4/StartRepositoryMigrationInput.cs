@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class StartRepositoryMigrationInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The ID of the migration source.
 		/// </summary>
@@ -29,7 +34,7 @@ namespace FluentHub.Octokit.Models.v4
 		public string RepositoryName { get; set; }
 
 		/// <summary>
-		/// Whether to continue the migration on error. Defaults to `false`. We strongly recommend setting this to `true` for the smoothest migration experience. *This default will change to `true` on September 4, 2023.*
+		/// Whether to continue the migration on error. Defaults to `true`.
 		/// </summary>
 		public bool? ContinueOnError { get; set; }
 
@@ -67,10 +72,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// Whether to lock the source repository.
 		/// </summary>
 		public bool? LockSource { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }

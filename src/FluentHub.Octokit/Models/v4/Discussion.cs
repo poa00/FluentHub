@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -112,12 +112,20 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		public IActor Editor { get; set; }
 
+		/// <summary>
+		/// The Node ID of the Discussion object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>
 		/// Check if this comment was edited and includes an edit with the creation data
 		/// </summary>
 		public bool IncludesCreatedEdit { get; set; }
+
+		/// <summary>
+		/// Only return answered/unanswered discussions
+		/// </summary>
+		public bool? IsAnswered { get; set; }
 
 		/// <summary>
 		/// A list of labels associated with the object.

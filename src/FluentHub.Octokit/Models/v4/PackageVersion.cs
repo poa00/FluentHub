@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -18,6 +18,9 @@ namespace FluentHub.Octokit.Models.v4
 		/// <param name="orderBy">Ordering of the returned package files.</param>
 		public PackageFileConnection Files { get; set; }
 
+		/// <summary>
+		/// The Node ID of the PackageVersion object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>

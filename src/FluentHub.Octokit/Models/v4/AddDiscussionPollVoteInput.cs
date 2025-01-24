@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -9,13 +9,13 @@ namespace FluentHub.Octokit.Models.v4
 	public class AddDiscussionPollVoteInput
 	{
 		/// <summary>
-		/// The Node ID of the discussion poll option to vote for.
-		/// </summary>
-		public ID PollOptionId { get; set; }
-
-		/// <summary>
 		/// A unique identifier for the client performing the mutation.
 		/// </summary>
 		public string ClientMutationId { get; set; }
+
+		/// <summary>
+		/// The Node ID of the discussion poll option to vote for.
+		/// </summary>
+		public ID PollOptionId { get; set; }
 	}
 }

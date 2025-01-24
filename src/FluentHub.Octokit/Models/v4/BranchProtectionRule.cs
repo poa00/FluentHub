@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -65,10 +65,13 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		public bool DismissesStaleReviews { get; set; }
 
+		/// <summary>
+		/// The Node ID of the BranchProtectionRule object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>
-		/// Can admins overwrite branch protection.
+		/// Can admins override branch protection.
 		/// </summary>
 		public bool IsAdminEnforced { get; set; }
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -58,6 +58,11 @@ namespace FluentHub.Octokit.Models.v4
 		/// Indicates if the repository has the Projects feature enabled.
 		/// </summary>
 		bool HasProjectsEnabled { get; set; }
+
+		/// <summary>
+		/// Indicates if the repository displays a Sponsor button for financial contributions.
+		/// </summary>
+		bool HasSponsorshipsEnabled { get; set; }
 
 		/// <summary>
 		/// Indicates if the repository has wiki feature enabled.
@@ -210,6 +215,8 @@ namespace FluentHub.Octokit.Models.v4
 		public bool HasIssuesEnabled { get; set; }
 
 		public bool HasProjectsEnabled { get; set; }
+
+		public bool HasSponsorshipsEnabled { get; set; }
 
 		public bool HasWikiEnabled { get; set; }
 

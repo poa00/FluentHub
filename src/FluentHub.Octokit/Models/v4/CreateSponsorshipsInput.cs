@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class CreateSponsorshipsInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The username of the user or organization who is acting as the sponsor, paying for the sponsorships.
 		/// </summary>
@@ -29,8 +34,8 @@ namespace FluentHub.Octokit.Models.v4
 		public SponsorshipPrivacy? PrivacyLevel { get; set; }
 
 		/// <summary>
-		/// A unique identifier for the client performing the mutation.
+		/// Whether the sponsorships created should continue each billing cycle for the sponsor (monthly or annually), versus lasting only a single month. Defaults to one-time sponsorships.
 		/// </summary>
-		public string ClientMutationId { get; set; }
+		public bool? Recurring { get; set; }
 	}
 }

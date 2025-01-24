@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -13,6 +13,16 @@ namespace FluentHub.Octokit.Models.v4
 		/// The text of the announcement
 		/// </summary>
 		string Announcement { get; set; }
+
+		/// <summary>
+		/// The date the announcement was created
+		/// </summary>
+		DateTimeOffset? AnnouncementCreatedAt { get; set; }
+
+		/// <summary>
+		/// Humanized string of "The date the announcement was created"
+		/// <summary>
+		string AnnouncementCreatedAtHumanized { get; set; }
 
 		/// <summary>
 		/// The expiration date of the announcement, if any
@@ -36,6 +46,10 @@ namespace FluentHub.Octokit.Models.v4
 	public class AnnouncementBanner : IAnnouncementBanner
 	{
 		public string Announcement { get; set; }
+
+		public DateTimeOffset? AnnouncementCreatedAt { get; set; }
+
+		public string AnnouncementCreatedAtHumanized { get; set; }
 
 		public DateTimeOffset? AnnouncementExpiresAt { get; set; }
 

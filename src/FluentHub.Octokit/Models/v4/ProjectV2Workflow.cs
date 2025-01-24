@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -24,19 +24,22 @@ namespace FluentHub.Octokit.Models.v4
 		public int? DatabaseId { get; set; }
 
 		/// <summary>
-		/// The workflows' enabled state.
+		/// Whether the workflow is enabled.
 		/// </summary>
 		public bool Enabled { get; set; }
 
+		/// <summary>
+		/// The Node ID of the ProjectV2Workflow object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>
-		/// The workflows' name.
+		/// The name of the workflow.
 		/// </summary>
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The workflows' number.
+		/// The number of the workflow.
 		/// </summary>
 		public int Number { get; set; }
 

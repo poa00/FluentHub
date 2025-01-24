@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -28,6 +28,9 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		public int? DatabaseId { get; set; }
 
+		/// <summary>
+		/// The Node ID of the MentionedEvent object
+		/// </summary>
 		public ID Id { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -38,5 +38,11 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		[EnumMember(Value = "TRADE_RESTRICTION")]
 		TradeRestriction,
+
+		/// <summary>
+		/// The repository is locked due to an ownership transfer.
+		/// </summary>
+		[EnumMember(Value = "TRANSFERRING_OWNERSHIP")]
+		TransferringOwnership,
 	}
 }
