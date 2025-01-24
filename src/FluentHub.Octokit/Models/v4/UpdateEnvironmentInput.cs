@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class UpdateEnvironmentInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The node ID of the environment.
 		/// </summary>
@@ -24,8 +29,8 @@ namespace FluentHub.Octokit.Models.v4
 		public List<ID> Reviewers { get; set; }
 
 		/// <summary>
-		/// A unique identifier for the client performing the mutation.
+		/// Whether deployments to this environment can be approved by the user who created the deployment.
 		/// </summary>
-		public string ClientMutationId { get; set; }
+		public bool? PreventSelfReview { get; set; }
 	}
 }

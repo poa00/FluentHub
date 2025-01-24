@@ -1,4 +1,4 @@
-// Copyright (c) FluentHub
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 using FluentHub.App.Dialogs;
@@ -77,6 +77,8 @@ namespace FluentHub.App.ViewModels.Viewers
 
 			var items = (List<Repository>)repositoryResult.Response;
 
+			_TopRepositories.Clear();
+
 			if (items.Count < 6)
 			{
 				foreach (var item in items)
@@ -102,6 +104,8 @@ namespace FluentHub.App.ViewModels.Viewers
 			notificationResponse.RemoveAll(x =>
 				x.Subject.Type != NotificationSubjectType.IssueOpen &&
 				x.Subject.Type != NotificationSubjectType.PullRequestOpen);
+
+			_RecentActivities.Clear();
 
 			if (notificationResponse.Count < 8)
 			{

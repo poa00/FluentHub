@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -22,6 +22,9 @@ namespace FluentHub.Octokit.Models.v4
 		/// <param name="before">Returns the elements in the list that come before the specified cursor.</param>
 		public StatusCheckRollupContextConnection Contexts { get; set; }
 
+		/// <summary>
+		/// The Node ID of the StatusCheckRollup object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>

@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -58,6 +58,9 @@ namespace FluentHub.Octokit.Models.v4
 		/// <param name="orderBy">Ordering options for the project v2 fields returned from the connection.</param>
 		public ProjectV2FieldConfigurationConnection GroupByFields { get; set; }
 
+		/// <summary>
+		/// The Node ID of the ProjectV2View object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>

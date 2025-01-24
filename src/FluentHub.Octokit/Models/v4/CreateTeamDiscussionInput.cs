@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class CreateTeamDiscussionInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The ID of the team to which the discussion belongs. This field is required.
 		/// **Upcoming Change on 2024-07-01 UTC**
@@ -33,16 +38,11 @@ namespace FluentHub.Octokit.Models.v4
 		public string Body { get; set; }
 
 		/// <summary>
-		/// If true, restricts the visibility of this discussion to team members and organization admins. If false or not specified, allows any organization member to view this discussion.
+		/// If true, restricts the visibility of this discussion to team members and organization owners. If false or not specified, allows any organization member to view this discussion.
 		/// **Upcoming Change on 2024-07-01 UTC**
 		/// **Description:** `private` will be removed. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement.
 		/// **Reason:** The Team Discussions feature is deprecated in favor of Organization Discussions.
 		/// </summary>
 		public bool? Private { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }

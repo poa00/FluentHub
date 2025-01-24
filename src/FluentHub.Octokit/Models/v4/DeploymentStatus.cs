@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -34,10 +34,18 @@ namespace FluentHub.Octokit.Models.v4
 		public string Description { get; set; }
 
 		/// <summary>
+		/// Identifies the environment of the deployment at the time of this deployment status
+		/// </summary>
+		public string Environment { get; set; }
+
+		/// <summary>
 		/// Identifies the environment URL of the deployment.
 		/// </summary>
 		public string EnvironmentUrl { get; set; }
 
+		/// <summary>
+		/// The Node ID of the DeploymentStatus object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>

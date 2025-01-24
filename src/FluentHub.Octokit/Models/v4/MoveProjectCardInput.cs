@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class MoveProjectCardInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The id of the card to move.
 		/// </summary>
@@ -22,10 +27,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// Place the new card after the card with this id. Pass null to place it at the top.
 		/// </summary>
 		public ID? AfterCardId { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }

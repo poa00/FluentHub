@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class UpdateCheckRunInput
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The node ID of the repository.
 		/// </summary>
@@ -62,10 +67,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// Possible further actions the integrator can perform, which a user may trigger.
 		/// </summary>
 		public List<CheckRunAction> Actions { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }

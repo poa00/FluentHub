@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -58,16 +58,22 @@ namespace FluentHub.Octokit.Models.v4
 		Issuehunt,
 
 		/// <summary>
-		/// Otechie funding platform.
-		/// </summary>
-		[EnumMember(Value = "OTECHIE")]
-		Otechie,
-
-		/// <summary>
 		/// LFX Crowdfunding funding platform.
 		/// </summary>
 		[EnumMember(Value = "LFX_CROWDFUNDING")]
 		LfxCrowdfunding,
+
+		/// <summary>
+		/// Polar funding platform.
+		/// </summary>
+		[EnumMember(Value = "POLAR")]
+		Polar,
+
+		/// <summary>
+		/// Buy Me a Coffee funding platform.
+		/// </summary>
+		[EnumMember(Value = "BUY_ME_A_COFFEE")]
+		BuyMeACoffee,
 
 		/// <summary>
 		/// Custom funding platform.

@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -9,6 +9,12 @@ namespace FluentHub.Octokit.Models.v4
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum CheckStatusState
 	{
+		/// <summary>
+		/// The check suite or run has been requested.
+		/// </summary>
+		[EnumMember(Value = "REQUESTED")]
+		Requested,
+
 		/// <summary>
 		/// The check suite or run has been queued.
 		/// </summary>
@@ -38,11 +44,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// </summary>
 		[EnumMember(Value = "PENDING")]
 		Pending,
-
-		/// <summary>
-		/// The check suite or run has been requested.
-		/// </summary>
-		[EnumMember(Value = "REQUESTED")]
-		Requested,
 	}
 }

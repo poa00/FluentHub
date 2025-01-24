@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -12,6 +12,11 @@ namespace FluentHub.Octokit.Models.v4
 		/// Identifies the primary key from the database.
 		/// </summary>
 		public int? DatabaseId { get; set; }
+
+		/// <summary>
+		/// Whether deployments to this environment can be approved by the user who created the deployment.
+		/// </summary>
+		public bool? PreventSelfReview { get; set; }
 
 		/// <summary>
 		/// The teams or users that can review the deployment

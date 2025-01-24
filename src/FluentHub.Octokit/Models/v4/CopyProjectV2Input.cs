@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -8,6 +8,11 @@ namespace FluentHub.Octokit.Models.v4
 	/// </summary>
 	public class CopyProjectV2Input
 	{
+		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
 		/// <summary>
 		/// The ID of the source Project to copy.
 		/// </summary>
@@ -27,10 +32,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// Include draft issues in the new project
 		/// </summary>
 		public bool? IncludeDraftIssues { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -118,6 +118,9 @@ namespace FluentHub.Octokit.Models.v4
 		/// <param name="includeNotificationContexts">Whether or not to include notification contexts</param>
 		public Hovercard Hovercard { get; set; }
 
+		/// <summary>
+		/// The Node ID of the Issue object
+		/// </summary>
 		public ID Id { get; set; }
 
 		/// <summary>

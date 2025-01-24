@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -29,6 +29,16 @@ namespace FluentHub.Octokit.Models.v4
 		/// True if the viewer is sponsored by this user/organization.
 		/// </summary>
 		bool IsSponsoringViewer { get; set; }
+
+		/// <summary>
+		/// Calculate how much each sponsor has ever paid total to this maintainer via GitHub Sponsors. Does not include sponsorships paid via Patreon.
+		/// </summary>
+		/// <param name="first">Returns the first _n_ elements from the list.</param>
+		/// <param name="after">Returns the elements in the list that come after the specified cursor.</param>
+		/// <param name="last">Returns the last _n_ elements from the list.</param>
+		/// <param name="before">Returns the elements in the list that come before the specified cursor.</param>
+		/// <param name="orderBy">Ordering options for results returned from the connection.</param>
+		SponsorAndLifetimeValueConnection LifetimeReceivedSponsorshipValues { get; set; }
 
 		/// <summary>
 		/// The estimated monthly GitHub Sponsors income for this user/organization in cents (USD).
@@ -154,6 +164,8 @@ namespace FluentHub.Octokit.Models.v4
 		public bool IsSponsoredBy { get; set; }
 
 		public bool IsSponsoringViewer { get; set; }
+
+		public SponsorAndLifetimeValueConnection LifetimeReceivedSponsorshipValues { get; set; }
 
 		public int MonthlyEstimatedSponsorsIncomeInCents { get; set; }
 

@@ -1,10 +1,10 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
 {
 	/// <summary>
-	/// The connection type for Sponsor.
+	/// A list of users and organizations sponsoring someone via GitHub Sponsors.
 	/// </summary>
 	public class SponsorConnection
 	{

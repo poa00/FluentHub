@@ -1,4 +1,4 @@
-// Copyright (c) 2023 0x5BFA
+// Copyright (c) 2022-2024 0x5BFA
 // Licensed under the MIT License. See the LICENSE.
 
 namespace FluentHub.Octokit.Models.v4
@@ -9,6 +9,11 @@ namespace FluentHub.Octokit.Models.v4
 	public class UnmarkIssueAsDuplicateInput
 	{
 		/// <summary>
+		/// A unique identifier for the client performing the mutation.
+		/// </summary>
+		public string ClientMutationId { get; set; }
+
+		/// <summary>
 		/// ID of the issue or pull request currently marked as a duplicate.
 		/// </summary>
 		public ID DuplicateId { get; set; }
@@ -17,10 +22,5 @@ namespace FluentHub.Octokit.Models.v4
 		/// ID of the issue or pull request currently considered canonical/authoritative/original.
 		/// </summary>
 		public ID CanonicalId { get; set; }
-
-		/// <summary>
-		/// A unique identifier for the client performing the mutation.
-		/// </summary>
-		public string ClientMutationId { get; set; }
 	}
 }
